@@ -1,0 +1,20 @@
+.app-landing-footer {
+  height: 133px;
+  padding: 36px;
+  background-color: white;
+
+  span {
+    margin: 16px 0;
+    text-align: center;
+  }
+
+  .landing-footer-image {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.social-media-icon {
+  margin: 0 8px;
+}

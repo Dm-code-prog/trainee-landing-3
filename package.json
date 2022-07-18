@@ -1,0 +1,18 @@
+{
+  "name": "trainee-landing-3",
+  "version": "1.0.0",
+  "description": "Our third project, the primary focus is using sass to describe styles",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "trainee program ArmenoTech 2022",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.53.0"
+  }
+}

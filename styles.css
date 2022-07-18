@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+.spaceAroundContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.app-landing-footer {
+  height: 133px;
+  padding: 36px;
+  background-color: white;
+}
+.app-landing-footer span {
+  margin: 16px 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .app-landing-footer .landing-footer-image {
+    display: none;
+  }
+}
+
+.social-media-icon {
+  margin: 0 8px;
+}
+
+body {
+  background-color: white;
+  color: 0;
+  font-family: "Montserrat", sans-serif;
+}
