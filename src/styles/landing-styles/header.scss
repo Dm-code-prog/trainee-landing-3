@@ -1,0 +1,70 @@
+@import './src/styles/vars.scss';
+
+.selected-link {    
+    color: $orange-color !important;
+}
+
+.landing-header-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 90px 40px;
+    margin: 25px 0;
+
+    @media (max-width: 768px) {
+        padding: 0 16px;
+        margin: 17px 0;
+      }
+
+    .landing-header-logo {  
+        @media (max-width: 768px) {
+            width: 25%;
+            min-width: 105px;
+          }
+    }
+
+    .landing-header-list {  
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        
+        @media (max-width: 768px) {
+            display: none;
+          }
+
+        li {   
+            padding: 0 3.5vw;
+
+            a { 
+                text-decoration: none;
+                color: $soft-black-color;
+
+                &:active {  
+                    color: $orange-color;
+                }
+
+            }
+
+        }
+
+    }
+
+    .burger-menu {  
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+          }
+    }
+
+}
+
+.landing-hero-container {   
+    color: white;
+    height: 620px;
+    background-image: url(./src/assets/images/hero-background.png);
+    text-align: center;
+}

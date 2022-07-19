@@ -25,6 +25,68 @@
   margin: 0 8px;
 }
 
+.selected-link {
+  color: #FA4A0C !important;
+}
+
+.landing-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 90px 40px;
+  margin: 25px 0;
+}
+@media (max-width: 768px) {
+  .landing-header-container {
+    padding: 0 16px;
+    margin: 17px 0;
+  }
+}
+@media (max-width: 768px) {
+  .landing-header-container .landing-header-logo {
+    width: 25%;
+    min-width: 105px;
+  }
+}
+.landing-header-container .landing-header-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .landing-header-container .landing-header-list {
+    display: none;
+  }
+}
+.landing-header-container .landing-header-list li {
+  padding: 0 3.5vw;
+}
+.landing-header-container .landing-header-list li a {
+  text-decoration: none;
+  color: #252B42;
+}
+.landing-header-container .landing-header-list li a:active {
+  color: #FA4A0C;
+}
+.landing-header-container .burger-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .landing-header-container .burger-menu {
+    display: block;
+  }
+}
+
+.landing-hero-container {
+  color: white;
+  height: 620px;
+  background-image: url(./src/assets/images/hero-background.png);
+  text-align: center;
+}
+
 body {
   background-color: white;
   color: 0;
