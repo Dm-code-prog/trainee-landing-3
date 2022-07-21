@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;1,300;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 .spaceAroundContainer {
   display: flex;
   align-items: center;
@@ -7,15 +8,36 @@
   flex-wrap: wrap;
 }
 
+.main-button {
+  width: 320px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  border: 0;
+  cursor: pointer;
+}
+.main-button:focus {
+  outline: none;
+}
+
 .starting-menu {
   background-color: #ff4b3a;
   height: 100vh;
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  text-align: center;
+  overflow-x: hidden;
+}
+.starting-menu > * {
+  margin: 32px 0;
+}
+.starting-menu .starting-menu-header {
+  padding: 32px;
 }
 .starting-menu h1 {
   font-family: "Open Sans", sans-serif;
@@ -23,6 +45,32 @@
   font-style: italic;
   font-size: 65px;
   color: white;
+}
+.starting-menu .starting-menu-background {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.starting-menu .starting-menu-button {
+  color: #ff460a;
+}
+.starting-menu .starting-menu-logo {
+  position: relative;
+  width: 75px;
+  height: 75px;
+}
+.starting-menu .starting-menu-logo .white-circle {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border-radius: 50%;
+  top: 0;
+  z-index: -1;
+}
+.starting-menu .starting-menu-logo img {
+  z-index: 3;
+  margin: 12px 16px;
 }
 
 .app-landing-footer {
