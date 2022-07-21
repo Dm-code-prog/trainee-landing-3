@@ -25,6 +25,108 @@
   margin: 0 8px;
 }
 
+.how-the-app-works-section {
+  background-color: white;
+}
+.how-the-app-works-section h2 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 116px 0 50px;
+}
+
+.hr {
+  border: 1px solid #e4e4e4;
+  margin-bottom: 64px;
+}
+
+.title-create-an-account {
+  color: #fa4a0c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-create-an-account p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 40 auto;
+}
+
+.registration {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.registration h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  margin-bottom: 50px;
+}
+
+.an-account-is-created {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.an-account-is-created p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #737373;
+  margin: 0 auto;
+}
+
+.create-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-explore-while-shopping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FA4A0C;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.shop-for-you {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shop-for-you h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+}
+
+.description-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description-products p {
+  color: #737373;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.delicious-food {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   background-color: white;
   color: 0;
