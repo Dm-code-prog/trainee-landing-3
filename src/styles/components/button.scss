@@ -1,0 +1,13 @@
+.main-button {
+  width: 320px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  border: 0;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}

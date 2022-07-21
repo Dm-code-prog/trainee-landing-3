@@ -1,0 +1,28 @@
+.app-outer-layout {
+  @media (min-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+  }
+}
+
+.app-inner-layout {
+  width: 100vw;
+  height: 100vh;
+
+  @media (min-width: 768px) {
+    height: 896px;
+    width: 414px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+
+    @media (max-height: 920px) {
+      -moz-transform: scale(0.6, 0.6);
+      zoom: 0.6;
+      zoom: 60%;
+    }
+  }
+}
