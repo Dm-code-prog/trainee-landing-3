@@ -1,4 +1,5 @@
 @use "./common.scss";
+@use "./app-styles/login.scss";
 @use "./app-styles/starting-menu.scss";
 @use "./landing-styles/footer.scss";
 @use "./app-layout.scss";
@@ -14,4 +15,16 @@
 body {
   background-color: white;
   font-family: "Montserrat", sans-serif;
+}
+
+button, input, a {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  text-decoration: none;
+}
+
+button, a {
+  cursor: pointer;
 }

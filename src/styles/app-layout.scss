@@ -9,6 +9,7 @@
 .app-inner-layout {
   width: 100vw;
   height: 100vh;
+  z-index: 2;
 
   @media (min-width: 768px) {
     height: 896px;
