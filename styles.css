@@ -27,108 +27,95 @@
 
 .how-the-app-works-section {
   background-color: white;
+  margin: 50px;
 }
 .how-the-app-works-section h2 {
+  display: flex;
+  justify-content: center;
   color: #000000;
-  font-size: 24px;
-  font-weight: 600;
+  font-weight: 600px;
+  font-size: 24pxx;
   line-height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 116px 0 50px;
+  letter-spacing: 0.1 px;
 }
-
-.hr {
+.how-the-app-works-section .hr1 {
   border: 1px solid #e4e4e4;
-  margin-bottom: 64px;
-}
-
-.title-create-an-account {
-  color: #fa4a0c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.title-create-an-account p {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  margin: 40 auto;
-}
-
-.registration {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.registration h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 57px;
   margin-bottom: 50px;
+  width: 100%;
+  max-width: 884px;
 }
-
-.an-account-is-created {
+.how-the-app-works-section .hr {
+  border: 1px solid #e4e4e4;
+  margin-top: 50px;
+  width: 100%;
+}
+.how-the-app-works-section .checkout {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
-.an-account-is-created p {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 38px;
-  color: #737373;
+  align-items: center;
   margin: 0 auto;
+  text-align: center;
 }
-
-.create-account {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.how-the-app-works-section .checkout .checkout-text-class {
+  width: 100%;
+  max-width: 560px;
+  flex: 1;
 }
-
-.title-explore-while-shopping {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FA4A0C;
+.how-the-app-works-section .checkout h3 {
+  color: #fa4a0c;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
+  letter-spacing: 0.1 px;
 }
-
-.shop-for-you {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.shop-for-you h2 {
+.how-the-app-works-section .checkout h2 {
+  color: #252b42;
   font-weight: 700;
   font-size: 40px;
   line-height: 57px;
+  letter-spacing: 0.2 px;
+  margin-top: 16px;
 }
-
-.description-products {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.description-products p {
+.how-the-app-works-section .checkout p {
   color: #737373;
   font-weight: 500;
   font-size: 24px;
   line-height: 38px;
+  letter-spacing: 0.2 px;
+  margin-top: 34px 0 17px;
+}
+.how-the-app-works-section .checkout img {
+  right: -50px;
+  position: relative;
+  margin: -75px;
+}
+@media (min-width: 1440px) {
+  .how-the-app-works-section .checkout {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .how-the-app-works-section .checkout:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
 }
 
-.delicious-food {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 900px) {
+  .hr1 {
+    display: none;
+  }
 }
-
+@media (min-width: 900px) {
+  .hr {
+    display: none;
+  }
+}
 body {
   background-color: white;
-  color: 0;
+  color: #000000;
   font-family: "Montserrat", sans-serif;
 }
