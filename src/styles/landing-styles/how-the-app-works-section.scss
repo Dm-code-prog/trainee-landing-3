@@ -1,28 +1,35 @@
 .how-the-app-works-section {
   background-color: white;
-  margin: 50px;
+  margin: 40px;
   h2 {
     display: flex;
     justify-content: center;
     color: #000000;
     font-weight: 600px;
-    font-size: 24pxx;
+    font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.1 px;
+    margin: 40px 0px;
 }
 
-.hr1 {
+.hr-desktop {
   border: 1px solid #e4e4e4;
   margin-bottom: 50px;
   width: 100%;
   max-width: 884px;
+  margin: 0 auto;
+  @media (max-width: 1440px){
+    display: none;
+  }
  
 }
 
-.hr {
+.hr-mobile {
   border: 1px solid #e4e4e4;
   margin-top: 50px;
   width: 100%;
+  margin: 40px 0;
+  
   
 }
 
@@ -47,6 +54,7 @@
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.1 px;
+    margin-bottom: 40px;
   }
 
   h2 {
@@ -55,7 +63,7 @@
     font-size: 40px;
     line-height: 57px;
     letter-spacing: 0.2 px;
-    margin-top: 16px;
+    margin-bottom: 40px;
   }
 
   p {
@@ -67,9 +75,9 @@
     margin-top: 34px 0 17px;
   }
   img {
-    right: -50px;
+    right: -45px;
     position: relative;
-    margin: -75px;
+    margin: -75px 0;
   }
 }
 
@@ -89,15 +97,11 @@
 }
 }
 
-@media (max-width: 900px) {
-    .hr1 {
+@media (min-width: 1440px) {
+    .hr-mobile {
         display: none;
-    }
+        
+ }
+
 }
 
-
-@media (min-width: 900px) {
-    .hr {
-        display: none;
-    }
-}

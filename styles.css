@@ -1,9 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;1,300;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 .spaceAroundContainer {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.main-button {
+  width: 320px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  border: 0;
+  cursor: pointer;
+}
+.main-button:focus {
+  outline: none;
+}
+
+.starting-menu {
+  background-color: #ff4b3a;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+.starting-menu > * {
+  margin: 32px 0;
+}
+.starting-menu .starting-menu-header {
+  padding: 32px;
+}
+.starting-menu h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 65px;
+  color: white;
+}
+.starting-menu .starting-menu-background {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.starting-menu .starting-menu-button {
+  color: #ff460a;
+}
+.starting-menu .starting-menu-logo {
+  position: relative;
+  width: 75px;
+  height: 75px;
+}
+.starting-menu .starting-menu-logo .white-circle {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border-radius: 50%;
+  top: 0;
+  z-index: -1;
+}
+.starting-menu .starting-menu-logo img {
+  z-index: 3;
+  margin: 12px 16px;
 }
 
 .app-landing-footer {
@@ -25,29 +93,68 @@
   margin: 0 8px;
 }
 
+@media (min-width: 768px) {
+  .app-outer-layout {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+  }
+}
+
+.app-inner-layout {
+  width: 100vw;
+  height: 100vh;
+}
+@media (min-width: 768px) {
+  .app-inner-layout {
+    height: 896px;
+    width: 414px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+}
+@media (min-width: 768px) and (max-height: 920px) {
+  .app-inner-layout {
+    -moz-transform: scale(0.6, 0.6);
+    zoom: 0.6;
+    zoom: 60%;
+  }
+}
+
 .how-the-app-works-section {
   background-color: white;
-  margin: 50px;
+  margin: 40px;
 }
 .how-the-app-works-section h2 {
   display: flex;
   justify-content: center;
   color: #000000;
   font-weight: 600px;
-  font-size: 24pxx;
+  font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.1 px;
+  margin: 40px 0px;
 }
-.how-the-app-works-section .hr1 {
+.how-the-app-works-section .hr-desktop {
   border: 1px solid #e4e4e4;
   margin-bottom: 50px;
   width: 100%;
   max-width: 884px;
+  margin: 0 auto;
 }
-.how-the-app-works-section .hr {
+@media (max-width: 1440px) {
+  .how-the-app-works-section .hr-desktop {
+    display: none;
+  }
+}
+.how-the-app-works-section .hr-mobile {
   border: 1px solid #e4e4e4;
   margin-top: 50px;
   width: 100%;
+  margin: 40px 0;
 }
 .how-the-app-works-section .checkout {
   display: flex;
@@ -68,6 +175,7 @@
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.1 px;
+  margin-bottom: 40px;
 }
 .how-the-app-works-section .checkout h2 {
   color: #252b42;
@@ -75,7 +183,7 @@
   font-size: 40px;
   line-height: 57px;
   letter-spacing: 0.2 px;
-  margin-top: 16px;
+  margin-bottom: 40px;
 }
 .how-the-app-works-section .checkout p {
   color: #737373;
@@ -86,9 +194,9 @@
   margin-top: 34px 0 17px;
 }
 .how-the-app-works-section .checkout img {
-  right: -50px;
+  right: -45px;
   position: relative;
-  margin: -75px;
+  margin: -75px 0;
 }
 @media (min-width: 1440px) {
   .how-the-app-works-section .checkout {
@@ -104,18 +212,26 @@
   }
 }
 
-@media (max-width: 900px) {
-  .hr1 {
+@media (min-width: 1440px) {
+  .hr-mobile {
     display: none;
   }
 }
-@media (min-width: 900px) {
-  .hr {
-    display: none;
-  }
+.app-outer-layout {
+  background: #1E1E1E;
 }
+
+.app-inner-layout {
+  background: #F5F5F8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
-  color: #000000;
   font-family: "Montserrat", sans-serif;
 }
