@@ -64,6 +64,7 @@
         @media (max-width: 768px) {
             display: block;
           }
+
     }
 
 }
@@ -90,7 +91,6 @@
         padding: 0px 11px;
         background-image: none;
       }
-
 
     a { 
         font-weight: 600;
@@ -137,7 +137,6 @@
         @media (max-width: 768px) {
             color: $grey-color
           }
-
 
     }
 
@@ -230,9 +229,4 @@
 
     }
 
-}
-
-hr {    
-    max-width: 885px;
-    margin: 0 auto;
 }

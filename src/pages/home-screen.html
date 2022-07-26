@@ -11,29 +11,49 @@
     <div class="app-outer-layout">
       <div class="app-inner-layout home-screen">
         <div class="app-home-screen-header">
-          <a href="#"><img src="/src/assets/icons/home-menu-icon.svg"></a>
+          <a id="app-home-screen-menu" href="#"><img src="/src/assets/icons/home-menu-icon.svg"></a>
           <a href="#"><img src="/src/assets/icons/shopping-cart-icon.svg"></a>
         </div>
         <h1 class="app-home-screen-heading">Delicious food for you</h1>
 
           <div class="app-home-screen-search-container">
-            <img class="app-home-screen-search-icon" src="/src/assets/icons/home-search-icon.svg">
+            <a href="./search-screen.html"><img class="app-home-screen-search-icon" src="/src/assets/icons/home-search-icon.svg"></a>
             <input class="app-home-screen-search" type="search" placeholder="Search">
           </div>
 
-          <div class="app-home-screen-category-container">
-            <span>Foods</span>
-            <span>Drinks</span>
-            <span>Snacks</span>
-            <span>Sauce</span>
-          </div>
+          <ul class="app-home-screen-category-container">
+            <li><a href="#">Foods</a></li>
+            <li><a href="#">Drinks</a></li>
+            <li><a href="#">Snacks</a></li>
+            <li><a href="#">Sauce</a></li>
+            <li><a href="#">Sauce</a></li>
+            <li><a href="#">Sauce</a></li>
+            <li><a href="#">Sauce</a></li>
+          </ul>
 
           <div class="app-home-screen-item-container">
             <div class="app-home-screen-item">
-              <img src="/src/assets/images/app-home-screen-tomato.svg" alt="">
+              <img src="/src/assets/images/app-home-screen-tomato.svg">
               <h3>Veggie tomato mix</h3>
               <p>N1,900</p>
             </div>
+            <div class="app-home-screen-item">
+              <img src="/src/assets/images/app-home-screen-tomato.svg">
+              <h3>Spicy fish sauce</h3>
+              <p>N2,300.99</p>
+            </div>
+            <div class="app-home-screen-item">
+              <img src="/src/assets/images/app-home-screen-tomato.svg">
+              <h3>Veggie tomato mix</h3>
+              <p>N1,900</p>
+            </div>
+          </div> 
+
+          <div class="app-home-screen-footer-menu">
+            <a href="#"><img src="/src/assets/icons/home-icon.svg"></a>
+            <a href="#"><img src="/src/assets/icons/home-fav-icon.svg"></a>
+            <a href="/src/pages/profile.html"><img src="/src/assets/icons/home-user-icon.svg"></a>
+            <a href="#"><img src="/src/assets/icons/home-history-icon.svg"></a>
           </div>
 
       </div>
