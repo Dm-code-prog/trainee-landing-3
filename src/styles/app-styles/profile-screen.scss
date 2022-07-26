@@ -1,5 +1,37 @@
-@import "/src/styles/vars.scss";
+@import "./src/styles/vars.scss";
 
 .profile-screen {
-    
+    background-color: #F5F5F8;
+    padding: 0 50px;
+
+    .app-profile-screen-heading {
+        width: 100%;
+        padding-top: 60px;
+        margin-bottom: 55px;
+
+        h3 {    
+            text-align: center;
+            position: relative;
+        }
+
+        a { 
+            position: absolute;
+            z-index: 1;
+            
+            img {   
+                vertical-align: middle;
+            }
+
+        }
+
+    }
+
+    .app-profile-screen-profile-item {  
+        margin-bottom: 50px;
+    }
+
+    .app-profile-screen-payment-method-container {   
+        margin-bottom: 160px;
+    }
+
 }

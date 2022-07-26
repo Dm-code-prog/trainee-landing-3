@@ -277,6 +277,33 @@
   padding-bottom: 39px;
 }
 
+.profile-screen {
+  background-color: #F5F5F8;
+  padding: 0 50px;
+}
+.profile-screen .app-profile-screen-heading {
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 55px;
+}
+.profile-screen .app-profile-screen-heading h3 {
+  text-align: center;
+  position: relative;
+}
+.profile-screen .app-profile-screen-heading a {
+  position: absolute;
+  z-index: 1;
+}
+.profile-screen .app-profile-screen-heading a img {
+  vertical-align: middle;
+}
+.profile-screen .app-profile-screen-profile-item {
+  margin-bottom: 50px;
+}
+.profile-screen .app-profile-screen-payment-method-container {
+  margin-bottom: 160px;
+}
+
 .selected-link {
   color: #FA4A0C !important;
 }
