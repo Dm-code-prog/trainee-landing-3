@@ -11,32 +11,47 @@
     <div class="app-outer-layout">
       <div class="app-inner-layout profile-screen">
        
-        <div class="app-profile-screen-heading">
+        <div class="app-profile-screen-header">
             <a href="./home-screen.html"><img src="/src/assets/icons/back-icon.svg"></a>
             <h3>My profile</h3>
         </div>
 
-        <h3>Information</h3>
+        <h3 class="app-profile-screen-information-header">Information</h3>
 
         <div class="app-profile-screen-profile-item">
             <img src="/src/assets/images/app-profile-image.svg">
-            <h4>Marvis Ighedosa</h4>
-            <p>dosamarvis@gmail.com</p>
-            <p>No 15 uti street off ovie palace road effurun delta state</p>
+            <div class="app-profile-screen-text">  
+              <h4>Marvis Ighedosa</h4>
+              <p>dosamarvis@gmail.com</p>
+              <p>No 15 uti street off ovie palace road effurun delta state</p>
+            </div>
         </div>
 
-        <h3>Payment Method</h3>
+        <h3 class="app-profile-screen-payment-header">Payment Method</h3>
 
-        <div class="app-profile-screen-payment-method-container">
-            <input type="radio">
-            <label for="">Card</label><br>
-            <input type="radio">
-            <label for="">Bank account</label><br>
-            <input type="radio">
-            <label for="">Paypal</label><br>
-        </div>
+        <form class="app-profile-screen-payment-method-container">
 
-        <button>Update</button>
+          <div class="app-profile-radio-item">
+            <input class="app-profile-radio-input" id="card" type="radio" name="payment" value="card">
+            <img src="/src/assets/icons/app-card-icon.svg" alt="">
+            <label class="app-profile-radio-label" for="card">Card</label>
+          </div>
+
+          <div class="app-profile-radio-item">
+            <input class="app-profile-radio-input" id="bank" type="radio" name="payment" value="bank">
+            <img src="/src/assets/icons/app-bank-icon.svg" alt="">
+            <label class="app-profile-radio-label" for="bank">Bank account</label>
+          </div>
+
+          <div class="app-profile-radio-item">
+            <input class="app-profile-radio-input" id="paypal" type="radio" name="payment" value="paypal">
+            <img src="/src/assets/icons/app-paypal-icon.svg" alt="">
+            <label class="app-profile-radio-label" for="paypal">Paypal</label>
+          </div>
+        
+        </form>
+
+        <button class="main-button">Update</button>
 
       </div>
     </div>

@@ -4,7 +4,7 @@
     background-color: #F5F5F8;
     padding: 0 50px;
 
-    .app-profile-screen-heading {
+    .app-profile-screen-header {
         width: 100%;
         padding-top: 60px;
         margin-bottom: 55px;
@@ -26,12 +26,79 @@
 
     }
 
-    .app-profile-screen-profile-item {  
-        margin-bottom: 50px;
+    .app-profile-screen-information-header {    
+        margin-bottom: 12px;
     }
 
-    .app-profile-screen-payment-method-container {   
+    .app-profile-screen-profile-item { 
+        padding: 20px 15px; 
+        margin-bottom: 50px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
+        border-radius: 20px;
+        display: flex;
+
+        img {   
+            align-self: flex-start;
+            margin-right: 15px;
+        }
+        
+        .app-profile-screen-text {  
+            
+            h4 {    
+                margin-bottom: 9px;
+            }
+
+            p { 
+                font-size: 13px;
+                margin-bottom: 9px;
+            }
+
+        }
+
+    }
+
+    .app-profile-screen-payment-header {   
+        margin-bottom: 20px;
+    }
+
+    .app-profile-screen-payment-method-container {  
+        padding: 20px; 
+        padding-bottom: 30px;
         margin-bottom: 160px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
+
+        .app-profile-radio-item {   
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+            &:last-child {  
+                margin-bottom: 0;
+            }
+
+            .app-profile-radio-input {  
+               margin-right: 15px;
+
+                &:checked { 
+                    accent-color: $orange-color;
+                }
+
+            }
+
+            img {   
+                margin-right: 11px;
+
+            }
+
+            .app-profile-radio-label {
+                font-weight: 500;
+            }
+
+        }
+
     }
 
 }
