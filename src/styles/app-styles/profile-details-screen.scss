@@ -1,0 +1,48 @@
+.profile-details {  
+    background-color: #F5F5F8;
+    padding: 60px 50px;
+
+    > a {   
+        display: inline-block;
+        margin-bottom: 45px;
+    }
+
+    > h1 {  
+        font-size: 34px;
+        margin-bottom: 45px;
+    }
+
+    .app-profile-screen-profile-item {   
+        display: flex;
+        padding: 18px 11px 26px 16px;
+        background-color: white;
+        border-radius: 20px;
+        
+        img {   
+            align-self: flex-start;
+            margin-right: 15px;
+        }
+
+        .app-profile-screen-text {
+
+            h4 {    
+                font-size: 18px;
+                margin-bottom: 6px;
+            }
+
+            p { 
+                font-size: 15px;
+
+                &:not(:last-child) {    
+                    padding-bottom: 7px;
+                    margin-bottom: 7px;
+                    border-bottom: #808080 1px solid;
+                }
+
+            }
+
+        }
+
+    }
+
+}

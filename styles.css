@@ -306,16 +306,42 @@
   background-color: #FFFFFF;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
   border-radius: 20px;
+  position: relative;
   display: flex;
 }
-.profile-screen .app-profile-screen-profile-item img {
+.profile-screen .app-profile-screen-profile-item .app-profile-edit-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+@media (max-width: 410px) {
+  .profile-screen .app-profile-screen-profile-item .app-profile-edit-button {
+    top: unset;
+    right: unset;
+    width: 60px;
+    padding-top: 3px;
+    background-color: #F5F5F8;
+    border-radius: 10px;
+    text-align: center;
+    bottom: 28px;
+    left: 15px;
+  }
+}
+@media (max-width: 410px) {
+  .profile-screen .app-profile-screen-profile-item .app-profile-edit-button img {
+    width: 15px;
+  }
+}
+.profile-screen .app-profile-screen-profile-item > img {
   align-self: flex-start;
   margin-right: 15px;
 }
 .profile-screen .app-profile-screen-profile-item .app-profile-screen-text h4 {
   margin-bottom: 9px;
+  font-size: 18px;
 }
 .profile-screen .app-profile-screen-profile-item .app-profile-screen-text p {
+  color: #808080;
   font-size: 13px;
   margin-bottom: 9px;
 }
@@ -334,6 +360,21 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  position: relative;
+  transition: transform 0.3s ease-out;
+}
+.profile-screen .app-profile-screen-payment-method-container .app-profile-radio-item:hover {
+  transform: translate(5px, 0px);
+}
+.profile-screen .app-profile-screen-payment-method-container .app-profile-radio-item:not(:last-child):after {
+  display: inline-block;
+  content: "";
+  opacity: 0.2;
+  border-bottom: 0.5px solid #555555;
+  width: 80%;
+  position: absolute;
+  top: 55px;
+  left: 28px;
 }
 .profile-screen .app-profile-screen-payment-method-container .app-profile-radio-item:last-child {
   margin-bottom: 0;
@@ -349,6 +390,57 @@
 }
 .profile-screen .app-profile-screen-payment-method-container .app-profile-radio-item .app-profile-radio-label {
   font-weight: 500;
+}
+.profile-screen .profile-button {
+  background-color: #FA4A0C;
+  color: white;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease-out;
+}
+.profile-screen .profile-button:hover {
+  box-shadow: 0px 4px 22px 0px rgba(34, 60, 80, 0.2);
+}
+.profile-screen .profile-button:active {
+  transform: translate(0px, 3px);
+}
+
+.profile-details {
+  background-color: #F5F5F8;
+  padding: 60px 50px;
+}
+.profile-details > a {
+  display: inline-block;
+  margin-bottom: 45px;
+}
+.profile-details > h1 {
+  font-size: 34px;
+  margin-bottom: 45px;
+}
+.profile-details .app-profile-screen-profile-item {
+  display: flex;
+  padding: 18px 11px 26px 16px;
+  background-color: white;
+  border-radius: 20px;
+}
+.profile-details .app-profile-screen-profile-item img {
+  align-self: flex-start;
+  margin-right: 15px;
+}
+.profile-details .app-profile-screen-profile-item .app-profile-screen-text h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.profile-details .app-profile-screen-profile-item .app-profile-screen-text p {
+  font-size: 15px;
+}
+.profile-details .app-profile-screen-profile-item .app-profile-screen-text p:not(:last-child) {
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  border-bottom: #808080 1px solid;
 }
 
 .selected-link {
@@ -622,4 +714,9 @@
 body {
   background-color: white;
   font-family: "Montserrat", sans-serif;
+}
+
+* a {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
