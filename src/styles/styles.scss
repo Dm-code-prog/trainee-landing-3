@@ -25,4 +25,10 @@ body {
 * a { 
   outline: none;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    &:-webkit-any-link {
+      cursor: pointer;
+      text-decoration: none;
+  }
+
 }
