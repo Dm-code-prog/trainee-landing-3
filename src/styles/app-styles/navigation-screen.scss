@@ -1,0 +1,59 @@
+@import "./src/styles/vars.scss";
+
+.navigation-screen {    
+    background-color: $orange-color;
+    padding-top: 160px;
+    padding-left: 40px;
+
+    .navigation-screen-nav-container {
+        display: flex;
+        justify-content: space-between;
+        
+    .navigation-screen-nav-buttons-container {  
+        display: flex;
+        flex-direction: column;
+
+        a { 
+            margin-bottom: 52px;
+            font-weight: 600;
+            color: white;
+
+            &::before { 
+                margin-right: 13px;
+            }
+
+        }
+
+        #navigation-profile::before {
+            content: url(/src/assets/icons/app-nav-profile-icon.svg);
+        }
+
+        #navigation-orders::before { 
+            content: url(/src/assets/icons/app-nav-cart-icon.svg);
+        }
+
+        #navigation-promo::before { 
+            content: url(/src/assets/icons/app-nav-promo-icon.svg);
+        }
+
+        #navigation-policy::before { 
+            content: url(/src/assets/icons/app-nav-policy-icon.svg);
+        }
+
+        #navigation-security::before { 
+            content: url(/src/assets/icons/app-nav-security-icon.svg);
+        }
+
+    }
+
+    }
+
+    .navigation-screen-image {  
+        width: 260px;
+        border-radius: 20px;
+        box-shadow: -20px 15px 0px 0px rgba(249, 108, 59);
+        position: absolute;
+        right: -110px;
+    }
+
+}

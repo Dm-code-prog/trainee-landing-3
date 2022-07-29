@@ -192,6 +192,50 @@
   margin-bottom: 50px;
 }
 
+.navigation-screen {
+  background-color: #FA4A0C;
+  padding-top: 160px;
+  padding-left: 40px;
+}
+.navigation-screen .navigation-screen-nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container a {
+  margin-bottom: 52px;
+  font-weight: 600;
+  color: white;
+}
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container a::before {
+  margin-right: 13px;
+}
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container #navigation-profile::before {
+  content: url(/src/assets/icons/app-nav-profile-icon.svg);
+}
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container #navigation-orders::before {
+  content: url(/src/assets/icons/app-nav-cart-icon.svg);
+}
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container #navigation-promo::before {
+  content: url(/src/assets/icons/app-nav-promo-icon.svg);
+}
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container #navigation-policy::before {
+  content: url(/src/assets/icons/app-nav-policy-icon.svg);
+}
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container #navigation-security::before {
+  content: url(/src/assets/icons/app-nav-security-icon.svg);
+}
+.navigation-screen .navigation-screen-image {
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: -20px 15px 0px 0px rgb(249, 108, 59);
+  position: absolute;
+  right: -110px;
+}
+
 .search-screen {
   background-color: #F2F2F2;
 }
@@ -410,7 +454,7 @@
 
 .profile-details {
   background-color: #F5F5F8;
-  padding: 66px 57px 0px 42px;
+  padding: 40px 57px 0px 42px;
 }
 .profile-details > a {
   display: inline-block;
@@ -449,20 +493,30 @@
 }
 .profile-details .app-profile-screen-profile-item .app-profile-screen-text h4 {
   font-size: 18px;
+  font-weight: 500;
   margin-bottom: 6px;
 }
 .profile-details .app-profile-screen-profile-item .app-profile-screen-text p {
   font-size: 15px;
   color: #808080;
+  position: relative;
 }
 .profile-details .app-profile-screen-profile-item .app-profile-screen-text p:not(:last-child) {
-  padding-bottom: 7px;
-  margin-bottom: 7px;
-  border-bottom: #808080 1px solid;
+  margin-bottom: 14px;
+}
+.profile-details .app-profile-screen-profile-item .app-profile-screen-text p:not(:last-child)::before {
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  border-bottom: 1px solid #808080;
+  width: 95%;
 }
 .profile-details .profile-nav-button {
   position: relative;
   font-size: 18px;
+  font-weight: 600;
   width: 100%;
   background-color: #ffffff;
   padding: 20px 25px;
@@ -477,6 +531,24 @@
   right: 40px;
   content: url("/src/assets/icons/back-icon.svg");
   transform: rotate(180deg);
+}
+.profile-details .profile-button {
+  background-color: #FA4A0C;
+  color: white;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease-out;
+  text-align: center;
+  line-height: 70px;
+}
+.profile-details .profile-button:hover {
+  box-shadow: 0px 4px 22px 0px rgba(34, 60, 80, 0.2);
+}
+.profile-details .profile-button:active {
+  transform: translate(0px, 3px);
 }
 
 .selected-link {
