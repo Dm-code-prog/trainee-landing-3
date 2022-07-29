@@ -196,6 +196,9 @@
   background-color: #FA4A0C;
   padding-top: 160px;
   padding-left: 40px;
+  padding-bottom: 87px;
+  z-index: 2;
+  overflow: hidden;
 }
 .navigation-screen .navigation-screen-nav-container {
   display: flex;
@@ -209,9 +212,21 @@
   margin-bottom: 52px;
   font-weight: 600;
   color: white;
+  position: relative;
+}
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container a::after {
+  content: "";
+  position: absolute;
+  top: 52px;
+  left: 35px;
+  display: inline-block;
+  width: 75%;
+  border-bottom: #c4c2c2 1px solid;
 }
 .navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container a::before {
   margin-right: 13px;
+  position: relative;
+  top: 4px;
 }
 .navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container #navigation-profile::before {
   content: url(/src/assets/icons/app-nav-profile-icon.svg);
@@ -230,10 +245,15 @@
 }
 .navigation-screen .navigation-screen-image {
   width: 260px;
-  border-radius: 20px;
-  box-shadow: -20px 15px 0px 0px rgb(249, 108, 59);
+  z-index: 1;
+  border-radius: 40px;
+  box-shadow: -35px 35px 0px -15px rgb(249, 108, 59);
   position: absolute;
   right: -110px;
+}
+.navigation-screen .navigation-screen-sign-out {
+  position: relative;
+  top: 0px;
 }
 
 .search-screen {
