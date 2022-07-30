@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="../../styles.css" />
-  </head>
-  <body>
-    <div class="app-outer-layout">
-      <div class="app-inner-layout cart-delivery">
-        <div class="header-cart-section">
-          <a href="#"><img src="/src/assets/icons/chevron-left.svg"></a>  
-          <h2>Cart</h2>
-          <div>
+    <link rel="stylesheet" href="../../styles.css"/>
+</head>
+<body>
+<div class="app-outer-layout">
+    <div class="app-inner-layout cart-delivery">
+        <div class="cart-header-container">
+            <a href="#"><img src="/src/assets/icons/chevron-left.svg"></a>
+            <h2>Cart</h2>
+        </div>
+        <div class="swipe-item-panel">
             <img id="swipe-cursor" src="/src/assets/icons/swipe-cursor.svg" alt="">
-            <p>swipe on an item to delete</p>
-          </div> 
+            <span>swipe on an item to delete</span>
         </div>
-            <div class="cart-delivery-item">
-              <img src="/src/assets/images/mask-group.png" alt="">
-              <div>
+        <div class="cart-delivery-item">
+            <img src="/src/assets/icons/delivery-cart-dish.png" alt="">
+            <div>
                 <h3>Veggie tomato mix</h3>
-                <p>#1,900</p>
-              </div>       
-              <img id="img-select" src="/src/assets/icons/group-select.svg" alt="">
-             </div>
-             <div class="cart-delivery-item-two">
-              <img src="/src/assets/images/mask-group-fish.svg" alt="">
-              <div>
-                <h3>Fishwith mix orange....</h3>
-                <p>#1,900</p>
-              </div>
-              <img src="/src/assets/icons/group-select-two.svg" alt="">
-             </div>
-          </div>    
+                <span>#1,900</span>
+            </div>
+            <img class="img-select" src="/src/assets/icons/group-select.svg" alt="">
         </div>
+        <div class="cart-delivery-item">
+            <img src="/src/assets/images/mask-group-fish.svg" alt="" class="">
+            <div>
+                <h3>Fish with mix orange....</h3>
+                <span>#1,900</span>
+            </div>
+            <img src="/src/assets/icons/group-select-two.svg" alt="" class="img-select">
+        </div>
+        <div class="delivery-cart-moved">
+            <div class="cart-delivery-item">
+                <img src="/src/assets/images/mask-group-fish.svg" alt="" class="">
+                <div>
+                    <h3>Fish with mix orange....</h3>
+                    <span>#1,900</span>
+                </div>
+                <img src="/src/assets/icons/group-select-two.svg" alt="" class="img-select">
+            </div>
+            <img src="/src/assets/icons/heart-icon.svg" alt="" width="45" height="45">
+            <img src="/src/assets/icons/red-circle-icon.svg" alt="" width="45" height="45">
+        </div>
+        <button class="main-button">
+            Complete order
+        </button>
     </div>
-  </body>
+</div>
+</body>
 </html>

@@ -1,60 +1,82 @@
-.header-cart-section {
-    display: flex;
-    margin-top: 60px;
-
-    #swipe-cursor {
-        margin: 0 auto;
-    }
-  
-}
-
+@use "../variables" as *;
 
 .cart-delivery {
-    background-color: #f5f5f8;
-    padding: 40px 50px;
-  
-    
-      
-    .cart-delivery-item {
-        display: flex;
-        background-color: #FFFFFF;
-        border-radius: 20px;
-        padding: 17px;
-        position: relative;
-        margin-bottom: 14px;
+  background-color: #f5f5f8;
+  padding: 40px 50px;
+  overflow: hidden;
 
+  button {
+    margin-top: 200px;
+    color: white;
+    background: $primary-orange;
+  }
 
+  .cart-delivery-item {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 17px;
+    position: relative;
+    margin-bottom: 14px;
+    height: 102px;
+    width: 300px;
 
-        p {
-            color : #FA4A0C;
-            margin-top: 10px;
-            
-        }
-     
-
-
-        h3 {
-            margin-bottom: 10px;
-        }    
-        
-
-
-        &#img-select {
-            position: absolute;
-            right: 20px;
-            bottom: 24px;
-        }
-
+    span {
+      color: #FA4A0C;
+      margin-top: 10px;
+      font-size: 15px;
     }
 
+    h3 {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+    > .img-select {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      width: 50px;
+      height: 20px;
+    }
+  }
 }
 
+.delivery-cart-moved {
+  position: relative;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  margin: 33px 0;
+  height: 100px;
 
-.cart-delivery-item-two {
-        display: flex;
-        background-color: #FFFFFF;
-        border-radius: 20px;
-     
-        
-    
+  .cart-delivery-item {
+    position: absolute;
+    left: -150px;
+    bottom: 0;
+    margin: 16px 0;
+  }
+
+  img {
+    margin:0 16px;
+  }
+}
+
+.cart-header-container{
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+}
+
+.swipe-item-panel {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
 }
