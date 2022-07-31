@@ -2,6 +2,7 @@
 
 .home-screen {  
     background-color: $app-grey-back;
+    min-width: 320px;
 
     .app-home-screen-header { 
         display: flex;
@@ -48,10 +49,11 @@
     }
 
     .app-home-screen-category-container { 
+        position: relative;
         display: flex;
         align-items: center;
         color: #9A9A9D;
-        margin-bottom: 115px;
+        margin-bottom: 45px;
         list-style-type: none;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
@@ -64,7 +66,7 @@
         li {    
             scroll-snap-align: end;
             font-weight: 400;
-            padding: 10px;
+            padding: 10px 0px;
             margin: 0 20px;
             border-bottom: transparent 3px solid;
 
@@ -87,7 +89,20 @@
 
     }
 
+    .app-home-see-more-container {   
+        text-align: right;
+        margin-bottom: 52px;
+        padding: 0 40px;
+
+        a { 
+            font-size: 15px;
+            color: $orange-color;
+        }
+
+    }
+
     .app-home-screen-item-container {   
+        position: relative;
         display: flex;
         padding-left: 50px;
         padding-top: 50px;
@@ -139,7 +154,6 @@
         display: flex;
         justify-content: space-between;
         padding: 0 50px;
-        margin-bottom: 50px;
     }
 
 }

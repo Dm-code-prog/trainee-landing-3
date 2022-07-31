@@ -2,6 +2,7 @@
 
 .search-screen {    
     background-color: $app-grey-back;
+    min-width: 320px;
 
     .app-search-screen-container {  
         display: flex;

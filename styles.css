@@ -75,6 +75,7 @@
 
 .home-screen {
   background-color: #F2F2F2;
+  min-width: 320px;
 }
 .home-screen .app-home-screen-header {
   display: flex;
@@ -114,10 +115,11 @@
   outline: 0;
 }
 .home-screen .app-home-screen-category-container {
+  position: relative;
   display: flex;
   align-items: center;
   color: #9A9A9D;
-  margin-bottom: 115px;
+  margin-bottom: 45px;
   list-style-type: none;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -129,7 +131,7 @@
 .home-screen .app-home-screen-category-container li {
   scroll-snap-align: end;
   font-weight: 400;
-  padding: 10px;
+  padding: 10px 0px;
   margin: 0 20px;
   border-bottom: transparent 3px solid;
 }
@@ -145,7 +147,17 @@
   text-decoration: none;
   color: unset;
 }
+.home-screen .app-home-see-more-container {
+  text-align: right;
+  margin-bottom: 52px;
+  padding: 0 40px;
+}
+.home-screen .app-home-see-more-container a {
+  font-size: 15px;
+  color: #FA4A0C;
+}
 .home-screen .app-home-screen-item-container {
+  position: relative;
   display: flex;
   padding-left: 50px;
   padding-top: 50px;
@@ -189,11 +201,11 @@
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
-  margin-bottom: 50px;
 }
 
 .navigation-screen {
   background-color: #FA4A0C;
+  min-width: 320px;
   padding-top: 160px;
   padding-left: 40px;
   padding-bottom: 87px;
@@ -268,6 +280,7 @@
 
 .search-screen {
   background-color: #F2F2F2;
+  min-width: 320px;
 }
 .search-screen .app-search-screen-container {
   display: flex;
@@ -365,6 +378,7 @@
 .profile-screen {
   background-color: #F5F5F8;
   padding: 0 50px;
+  min-width: 320px;
 }
 .profile-screen .app-profile-screen-header {
   width: 100%;
@@ -498,6 +512,7 @@
 
 .profile-details {
   background-color: #F5F5F8;
+  min-width: 320px;
   padding: 40px 57px 0px 42px;
 }
 .profile-details > a {
