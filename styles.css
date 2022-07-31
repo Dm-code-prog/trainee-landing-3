@@ -214,7 +214,7 @@
   color: white;
   position: relative;
 }
-.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container a::after {
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container a:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 52px;
@@ -253,7 +253,7 @@
 }
 .navigation-screen .navigation-screen-sign-out {
   position: relative;
-  top: 0px;
+  bottom: 1px;
 }
 
 .search-screen {

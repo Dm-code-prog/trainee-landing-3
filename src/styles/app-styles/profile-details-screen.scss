@@ -65,7 +65,7 @@
                     margin-bottom: 14px;
                 }
 
-                &:not(:last-child)::before{
+                &:not(:last-child)::before {
                     content: '';
                     opacity: 0.5;
                     position: absolute;

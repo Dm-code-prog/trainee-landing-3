@@ -22,7 +22,7 @@
             color: white;
             position: relative;
 
-            &::after {
+            &:not(:last-child)::after {
                 content: '';
                 position: absolute;
                 top: 52px;
@@ -75,7 +75,7 @@
 
     .navigation-screen-sign-out {   
         position: relative;
-        top: 0px;
+        bottom: 1px;
     }
 
 }
