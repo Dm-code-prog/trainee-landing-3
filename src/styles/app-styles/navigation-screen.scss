@@ -5,18 +5,21 @@
     padding-top: 160px;
     padding-left: 40px;
     padding-bottom: 87px;
-    z-index: 2;
-    overflow: hidden;
 
     .navigation-screen-nav-container {
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
         
     .navigation-screen-nav-buttons-container {  
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
 
-        a { 
+        .navigation-menu a { 
+            display: block;
             margin-bottom: 52px;
             font-weight: 600;
             color: white;
@@ -29,13 +32,27 @@
                 left: 35px;
                 display: inline-block;
                 width: 75%;
-                border-bottom: #c4c2c2 1px solid;
+                border-bottom: rgba(249, 108, 59) 1px solid;
             }
 
             &::before { 
                 margin-right: 13px;
                 position: relative;
                 top: 4px;
+            }
+
+        }
+
+        .navigation-screen-sign-out {   
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+
+            &::after {  
+                content: url(/src/assets/icons/app-arrow-icon.svg);
+                position: relative;
+                left: 11px;
+                top: 3px;
             }
 
         }
@@ -71,11 +88,6 @@
         box-shadow: -35px 35px 0px -15px rgba(249, 108, 59);
         position: absolute;
         right: -110px;
-    }
-
-    .navigation-screen-sign-out {   
-        position: relative;
-        bottom: 1px;
     }
 
 }

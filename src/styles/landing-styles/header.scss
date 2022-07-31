@@ -193,10 +193,11 @@
     position: relative;
     margin: 0 auto;
     max-width: 550px;
+    min-width: 320px;
     height: 600px;
 
     @media (max-width: 768px) {
-        width: 400px;
+        width: 100%;
     } 
 
     #left-phone {   
@@ -207,24 +208,26 @@
         z-index: 1;
 
         @media (max-width: 768px) {
-            width: 230px;
+            width: 55%;
+            max-width: 230px;
             left: 0px;
-            bottom: 220px;
+            top: -60px;
           }
 
     }
 
     #right-phone {  
         position: absolute;
-        left: 210px;
-        bottom: 0;
+        right: 50px;
+        bottom: 0px;
         top: 0;
         width: 285px;
         z-index: 0;
 
         @media (max-width: 768px) {
-            width: 219px;
-            left: 200px;
+            width: 55%;
+            max-width: 220px;
+            right: 10px;
           }
 
     }

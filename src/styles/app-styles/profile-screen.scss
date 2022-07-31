@@ -105,6 +105,7 @@
             margin-bottom: 30px;
             position: relative;
             transition: transform .3s ease-out;
+            cursor: pointer;
 
             &:hover {   
                 transform: translate(5px, 0px);
@@ -127,6 +128,7 @@
 
             .app-profile-radio-input {  
                margin-right: 15px;
+               cursor: inherit;
 
                 &:checked { 
                     accent-color: $orange-color;
@@ -141,6 +143,7 @@
 
             .app-profile-radio-label {
                 font-weight: 500;
+                cursor: inherit;
             }
 
         }  

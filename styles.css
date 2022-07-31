@@ -197,36 +197,50 @@
   padding-top: 160px;
   padding-left: 40px;
   padding-bottom: 87px;
-  z-index: 2;
-  overflow: hidden;
 }
 .navigation-screen .navigation-screen-nav-container {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
 }
 .navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container a {
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container .navigation-menu a {
+  display: block;
   margin-bottom: 52px;
   font-weight: 600;
   color: white;
   position: relative;
 }
-.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container a:not(:last-child)::after {
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container .navigation-menu a:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 52px;
   left: 35px;
   display: inline-block;
   width: 75%;
-  border-bottom: #c4c2c2 1px solid;
+  border-bottom: rgb(249, 108, 59) 1px solid;
 }
-.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container a::before {
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container .navigation-menu a::before {
   margin-right: 13px;
   position: relative;
   top: 4px;
+}
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container .navigation-screen-sign-out {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+.navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container .navigation-screen-sign-out::after {
+  content: url(/src/assets/icons/app-arrow-icon.svg);
+  position: relative;
+  left: 11px;
+  top: 3px;
 }
 .navigation-screen .navigation-screen-nav-container .navigation-screen-nav-buttons-container #navigation-profile::before {
   content: url(/src/assets/icons/app-nav-profile-icon.svg);
@@ -250,10 +264,6 @@
   box-shadow: -35px 35px 0px -15px rgb(249, 108, 59);
   position: absolute;
   right: -110px;
-}
-.navigation-screen .navigation-screen-sign-out {
-  position: relative;
-  bottom: 1px;
 }
 
 .search-screen {
@@ -291,9 +301,20 @@
   height: 772px;
   padding-top: 35px;
 }
-.search-screen .app-search-screen-stuff-container h1 {
+.search-screen .app-search-screen-stuff-container .app-search-screen-stuff-container-header {
+  position: relative;
   text-align: center;
   margin-bottom: 80px;
+}
+.search-screen .app-search-screen-stuff-container .app-search-screen-stuff-container-header::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 80px;
+  bottom: -115px;
+  display: block;
+  background: linear-gradient(180deg, rgb(249, 249, 249) 15%, rgba(255, 255, 255, 0) 95%);
+  z-index: 5;
 }
 .search-screen .app-search-screen-stuff-container .app-search-screen-item-container {
   display: flex;
@@ -426,6 +447,7 @@
   margin-bottom: 30px;
   position: relative;
   transition: transform 0.3s ease-out;
+  cursor: pointer;
 }
 .profile-screen .app-profile-screen-payment-method-container .app-profile-radio-item:hover {
   transform: translate(5px, 0px);
@@ -445,6 +467,7 @@
 }
 .profile-screen .app-profile-screen-payment-method-container .app-profile-radio-item .app-profile-radio-input {
   margin-right: 15px;
+  cursor: inherit;
 }
 .profile-screen .app-profile-screen-payment-method-container .app-profile-radio-item .app-profile-radio-input:checked {
   accent-color: #FA4A0C;
@@ -454,6 +477,7 @@
 }
 .profile-screen .app-profile-screen-payment-method-container .app-profile-radio-item .app-profile-radio-label {
   font-weight: 500;
+  cursor: inherit;
 }
 .profile-screen .profile-button {
   background-color: #FA4A0C;
@@ -747,11 +771,12 @@
   position: relative;
   margin: 0 auto;
   max-width: 550px;
+  min-width: 320px;
   height: 600px;
 }
 @media (max-width: 768px) {
   .hero-phone-container {
-    width: 400px;
+    width: 100%;
   }
 }
 .hero-phone-container #left-phone {
@@ -763,23 +788,25 @@
 }
 @media (max-width: 768px) {
   .hero-phone-container #left-phone {
-    width: 230px;
+    width: 55%;
+    max-width: 230px;
     left: 0px;
-    bottom: 220px;
+    top: -60px;
   }
 }
 .hero-phone-container #right-phone {
   position: absolute;
-  left: 210px;
-  bottom: 0;
+  right: 50px;
+  bottom: 0px;
   top: 0;
   width: 285px;
   z-index: 0;
 }
 @media (max-width: 768px) {
   .hero-phone-container #right-phone {
-    width: 219px;
-    left: 200px;
+    width: 55%;
+    max-width: 220px;
+    right: 10px;
   }
 }
 
