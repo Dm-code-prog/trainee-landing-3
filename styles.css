@@ -164,7 +164,7 @@
   margin-top: -50px;
   overflow-y: hidden;
   overflow-x: scroll;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   background-color: #F2F2F2;
 }
 .home-screen .app-home-screen-item-container::-webkit-scrollbar {
@@ -177,6 +177,7 @@
   margin-right: 35px;
   min-width: 220px;
   max-height: 270px;
+  box-shadow: 1px 10px 20px 9px rgba(57, 57, 57, 0.1);
 }
 .home-screen .app-home-screen-item-container .app-home-screen-item img {
   position: relative;

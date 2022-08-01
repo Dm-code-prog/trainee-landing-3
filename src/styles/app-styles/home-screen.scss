@@ -109,7 +109,7 @@
         margin-top: -50px;
         overflow-y: hidden;
         overflow-x: scroll;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
         background-color: $app-grey-back;
 
         &::-webkit-scrollbar {  
@@ -123,6 +123,7 @@
             margin-right: 35px;
             min-width: 220px;
             max-height: 270px;
+            box-shadow: 1px 10px 20px 9px rgb(57 57 57 / 10%);
 
             img {   
                 position: relative;
