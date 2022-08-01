@@ -104,13 +104,16 @@
     .app-home-screen-item-container {   
         position: relative;
         display: flex;
-        padding-left: 50px;
         padding-top: 50px;
         margin-top: -50px;
         overflow-y: hidden;
         overflow-x: scroll;
         padding-bottom: 50px;
         background-color: $app-grey-back;
+
+        & > :first-child { 
+            margin-left: 50px;
+        }
 
         &::-webkit-scrollbar {  
             display: none;

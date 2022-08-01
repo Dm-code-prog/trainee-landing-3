@@ -159,13 +159,15 @@
 .home-screen .app-home-screen-item-container {
   position: relative;
   display: flex;
-  padding-left: 50px;
   padding-top: 50px;
   margin-top: -50px;
   overflow-y: hidden;
   overflow-x: scroll;
   padding-bottom: 50px;
   background-color: #F2F2F2;
+}
+.home-screen .app-home-screen-item-container > :first-child {
+  margin-left: 50px;
 }
 .home-screen .app-home-screen-item-container::-webkit-scrollbar {
   display: none;
