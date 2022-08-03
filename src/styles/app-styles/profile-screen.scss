@@ -1,4 +1,4 @@
-@import "./src/styles/vars.scss";
+@import './src/styles/variables.scss';
 
 .profile-screen {
     background-color: #F5F5F8;
@@ -132,7 +132,7 @@
                cursor: inherit;
 
                 &:checked { 
-                    accent-color: $orange-color;
+                    accent-color: $primary-orange;
                 }
 
             }
@@ -153,7 +153,7 @@
     }
 
     .profile-button {    
-        background-color: $orange-color;
+        background-color: $primary-orange;
         color: white;
         display: block;
         width: 100%;

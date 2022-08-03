@@ -1,4 +1,4 @@
-@import "./src/styles/vars.scss";
+@import './src/styles/variables.scss';
 
 .profile-details {  
     background-color: #F5F5F8;
@@ -30,7 +30,7 @@
             font-size: 15px;
 
             &:-webkit-any-link {
-                color: $orange-color;
+                color: $primary-orange;
             }
 
         }
@@ -106,7 +106,7 @@
     }
 
     .profile-button {    
-        background-color: $orange-color;
+        background-color: $primary-orange;
         color: white;
         display: block;
         width: 100%;

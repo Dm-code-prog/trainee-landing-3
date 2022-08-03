@@ -1,7 +1,7 @@
-@import './src/styles/vars.scss';
+@import './src/styles/variables.scss';
 
 .home-screen {  
-    background-color: $app-grey-back;
+    background-color: $primary-grey;
     min-width: 320px;
 
     .app-home-screen-header { 
@@ -71,8 +71,8 @@
             border-bottom: transparent 3px solid;
 
             &:hover {  
-                color: $orange-color;
-                border-bottom: $orange-color 3px solid;
+                color: $primary-orange;
+                border-bottom: $primary-orange 3px solid;
             }
 
             &:first-of-type {   
@@ -96,7 +96,7 @@
 
         a { 
             font-size: 15px;
-            color: $orange-color;
+            color: $primary-orange;
         }
 
     }
@@ -109,7 +109,7 @@
         overflow-y: hidden;
         overflow-x: scroll;
         padding-bottom: 50px;
-        background-color: $app-grey-back;
+        background-color: $primary-grey;
 
         & > :first-child { 
             margin-left: 50px;
@@ -146,7 +146,7 @@
             p { 
                 font-weight: 700;
                 font-size: 17px;
-                color: $orange-color;
+                color: $primary-orange;
                 padding-bottom: 39px;
             }
 

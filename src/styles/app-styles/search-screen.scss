@@ -1,7 +1,7 @@
-@import './src/styles/vars.scss';
+@import './src/styles/variables.scss';
 
 .search-screen {    
-    background-color: $app-grey-back;
+    background-color: $primary-grey;
     min-width: 320px;
 
     .app-search-screen-container {  
@@ -25,7 +25,7 @@
         }
 
         .app-search-screen-input {   
-            background-color: $app-grey-back;
+            background-color: $primary-grey;
             font-size: 17px;
             font-weight: 600;
             width: 100%;
@@ -105,7 +105,7 @@
                     p { 
                         font-weight: 700;
                         font-size: 17px;
-                        color: $orange-color;
+                        color: $primary-orange;
                         padding-bottom: 39px;
                     }
         
