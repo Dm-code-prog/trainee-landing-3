@@ -74,6 +74,211 @@
   margin: 12px 16px;
 }
 
+.main-button {
+  width: 320px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  border: 0;
+  cursor: pointer;
+}
+.main-button:focus {
+  outline: none;
+}
+
+.dish-description {
+  background-color: #F6F6F9;
+  height: 100vh;
+  width: 100%;
+}
+.dish-description .dish-description-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dish-description .dish-description-header {
+  padding: 66px 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.dish-description .dish-description-foodimg {
+  margin: 0px 50px 0px 50px;
+}
+.dish-description .dish-description-cicle {
+  display: flex;
+  gap: 12px;
+}
+.dish-description .dish-description-cicle .cicle-d {
+  width: 8px;
+  height: 8px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dish-description .dish-description-cicle .cicle-r {
+  background-color: #FA4A0C;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dish-description .dish-description-text h1 {
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  margin-top: 45px;
+}
+.dish-description .dish-description-text h2 {
+  color: #FA4A0C;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 12px;
+}
+.dish-description .dish-info {
+  padding-left: 53px;
+  padding-right: 64px;
+}
+.dish-description .dish-info h1 {
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 40px;
+}
+.dish-description .dish-info p {
+  padding-top: 7px;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: #c4c4c4;
+}
+.dish-description .dish-button {
+  margin-top: 34px;
+  background-color: #FA4A0C;
+  color: white;
+}
+
+.main-button {
+  width: 320px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  border: 0;
+  cursor: pointer;
+}
+.main-button:focus {
+  outline: none;
+}
+
+.payment-info {
+  background-color: #F6F6F9;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.payment-info .methods {
+  margin-left: 49px;
+  margin-bottom: 20px;
+  margin-top: 19px;
+}
+.payment-info input {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #9f9f9f;
+  background-color: white;
+}
+.payment-info input:checked {
+  accent-color: #FA4A0C;
+}
+.payment-info .line {
+  margin: 25px;
+  border: 0.5px solid #000000;
+  width: 232px;
+  opacity: 0.3;
+}
+.payment-info .line-two {
+  margin: 15px;
+  border: 0.5px solid #000000;
+  width: 232px;
+  opacity: 0.3;
+}
+.payment-info label {
+  padding: 11px;
+}
+.payment-info .payment-info-header {
+  margin: 61px 50px 42px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.payment-info .payment-info-header img {
+  position: absolute;
+  left: 0;
+  top: 25%;
+}
+.payment-info .payment-info-header h2 {
+  font-size: 18px;
+}
+.payment-info .pay-text {
+  margin-left: 50px;
+  margin-bottom: 29px;
+}
+.payment-info .payment-method {
+  margin: 0 auto;
+  padding: 20px 21px;
+  background-color: white;
+  width: 315px;
+  height: 205px;
+  border-radius: 20px;
+}
+.payment-info .payment-method .card-img {
+  padding: 13px;
+  width: 40px;
+  height: 40px;
+  background: #f47b0a;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+.payment-info .payment-method .bank-img {
+  padding: 13px;
+  width: 40px;
+  height: 40px;
+  background: #eb4796;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+.payment-info .delivery-method {
+  margin: 0 auto;
+  background-color: white;
+  width: 315px;
+  height: 156px;
+  border-radius: 20px;
+  padding: 31px 21px;
+}
+.payment-info .total-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 41px 50px 0;
+}
+.payment-info .total-price p {
+  font-size: 17px;
+}
+.payment-info .total-price h1 {
+  font-size: 22px;
+}
+.payment-info .payment-button {
+  margin: 0 auto;
+  margin-top: 41px;
+  background-color: #FA4A0C;
+  color: white;
+  display: block;
+}
+
 .app-landing-footer {
   height: 133px;
   padding: 36px;
