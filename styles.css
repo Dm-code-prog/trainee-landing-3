@@ -233,8 +233,11 @@
   padding: 20px 21px;
   background-color: white;
   width: 315px;
-  height: 205px;
   border-radius: 20px;
+}
+.payment-info .payment-method .option {
+  display: flex;
+  align-items: center;
 }
 .payment-info .payment-method .card-img {
   padding: 13px;

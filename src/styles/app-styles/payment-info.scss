@@ -71,8 +71,12 @@
     padding: 20px 21px;
     background-color: white;
     width: 315px;
-    height: 205px;
     border-radius: 20px;
+
+    .option {
+      display: flex;
+      align-items: center;
+    }
 
     .card-img {
       padding: 13px;
