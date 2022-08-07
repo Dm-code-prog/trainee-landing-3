@@ -1,0 +1,144 @@
+@use "../variables" as *;
+.delivery-page {
+  background-color: #f5f5f8;
+  padding: 40px 50px;
+  overflow: hidden;
+}
+
+.delivery-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 0;
+  position: relative;
+
+ 
+  a {
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+}
+
+
+h2 {
+  margin-bottom: 42px;
+}
+
+
+.address-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.change {
+  text-decoration: none;
+  color: #f47b0a;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+.place-delivery {
+  height: 156px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 15px 30px;
+  font-weight: 500;
+  margin-bottom: 42px;
+}
+
+
+h5 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+
+hr {
+  height: 1px;
+  color: #b3b3b3;
+  width: 232px;
+  margin: 8px 0;
+  opacity: 0.4;
+}
+
+
+.delivery-method-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+
+.delivery-method {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 156px;
+}
+
+
+.radio {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+
+.radio-input {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 15px;
+  height: 15px;
+  &:checked {
+    accent-color: $primary-orange;
+  }
+}
+
+
+.border {
+  margin: 5px 55px;
+}
+
+
+.radio-lebel {
+  font-weight: 400;
+  font-size: 17px;
+  padding: 25px;
+  margin: 0 30px;
+}
+
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 67px;
+}
+
+
+h3 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+
+span {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+
+.delivery-button {
+  margin: 0 auto;
+  background-color: $primary-orange;
+  display: block;
+  text-align: center;
+  line-height: 70px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 35px;
+}
