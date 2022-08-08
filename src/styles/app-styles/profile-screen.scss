@@ -1,0 +1,175 @@
+@import './src/styles/variables.scss';
+
+.profile-screen {
+    background-color: #F5F5F8;
+    padding: 0 50px;
+    min-width: 320px;
+
+    .app-profile-screen-header {
+        width: 100%;
+        padding-top: 60px;
+        margin-bottom: 55px;
+
+        h3 {    
+            text-align: center;
+            position: relative;
+        }
+
+        a { 
+            position: absolute;
+            z-index: 1;
+            
+            img {   
+                vertical-align: middle;
+            }
+
+        }
+
+    }
+
+    .app-profile-screen-information-header {    
+        margin-bottom: 12px;
+    }
+
+    .app-profile-screen-profile-item { 
+        padding: 20px 15px; 
+        margin-bottom: 50px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
+        border-radius: 20px;
+        position: relative;
+        display: flex;
+
+        .app-profile-edit-button { 
+            position: absolute;
+            top: 25px;
+            right: 25px;
+
+            @media (max-width: 410px) {
+                top: unset;
+                right: unset;
+                width: 60px;
+                padding-top: 3px;
+                background-color: #F5F5F8;
+                border-radius: 10px;
+                text-align: center;
+                bottom: 28px;
+                left: 15px;
+            }
+
+            img { 
+
+                @media (max-width: 410px) {
+                    width: 15px;
+                }
+            }
+
+        }
+
+        > img {   
+            align-self: flex-start;
+            margin-right: 15px;
+        }
+        
+        .app-profile-screen-text {  
+            
+            h4 {    
+                margin-bottom: 9px;
+                font-size: 18px;
+            }
+
+            p { 
+                color: #808080;
+                font-size: 13px;
+                margin-bottom: 9px;
+            }
+
+        }
+
+    }
+
+    .app-profile-screen-payment-header {   
+        margin-bottom: 20px;
+    }
+
+    .app-profile-screen-payment-method-container {  
+        padding: 20px; 
+        padding-bottom: 30px;
+        margin-bottom: 160px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
+
+        .app-profile-radio-item {   
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            position: relative;
+            transition: transform .3s ease-out;
+            cursor: pointer;
+
+            &:hover {   
+                transform: translate(5px, 0px);
+            }
+
+            &:not(:last-child):after {  
+                display: inline-block;
+                content: '';
+                opacity: 0.2;
+                border-bottom: 0.5px solid #555555;;
+                width: 80%;
+                position: absolute;
+                top: 55px;
+                left: 28px;
+            }
+
+            &:last-child {  
+                margin-bottom: 0;
+            }
+
+            .app-profile-radio-input {  
+               margin-right: 15px;
+               cursor: inherit;
+
+                &:checked { 
+                    accent-color: $primary-orange;
+                }
+
+            }
+
+            img {   
+                margin-right: 11px;
+
+            }
+
+            .app-profile-radio-label {
+                font-weight: 500;
+                cursor: inherit;
+            }
+
+        }  
+
+
+    }
+
+    .profile-button {    
+        background-color: $primary-orange;
+        color: white;
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        transition: transform .3s ease-out;
+
+        &:hover {   
+            box-shadow: 0px 4px 22px 0px rgba(34, 60, 80, 0.2);
+        }
+
+        &:active {  
+            transform: translate(0px, 3px)
+        }
+
+    }
+
+}

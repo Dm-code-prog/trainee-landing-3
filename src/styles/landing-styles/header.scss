@@ -1,0 +1,235 @@
+@import './src/styles/variables.scss';
+
+.selected-link {    
+    color: $primary-orange !important;
+}
+
+.landing-header-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 90px 40px;
+    margin: 25px 0;
+    min-width: 320px;
+
+    @media (max-width: 768px) {
+        padding: 0 16px;
+        margin-top: 17px;
+        margin-bottom: 67px;
+      }
+
+    a { 
+        font-weight: 600;
+    }
+
+    .landing-header-logo {  
+        @media (max-width: 768px) {
+            width: 25%;
+            min-width: 105px;
+          }
+    }
+
+    .landing-header-list {  
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        
+        @media (max-width: 768px) {
+            display: none;
+          }
+
+        li {   
+            padding: 0 3.5vw;
+
+            a { 
+                text-decoration: none;
+                color: $soft-black-color;
+
+                &:active {  
+                    color: $primary-orange;
+                }
+
+            }
+
+        }
+
+    }
+
+    .burger-menu {  
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+          }
+
+    }
+
+}
+
+.landing-hero-container {   
+    color: white;
+    margin-bottom: -90px;
+    box-sizing: border-box;
+    min-width: 320px;
+    height: 620px;
+    padding: 70px 10px;
+    background-image: url(./src/assets/images/hero-background.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    @media (max-width: 984px) {
+        margin-bottom: 0px;
+      }
+
+    @media (max-width: 768px) {
+        margin-bottom: 80px;
+        height: unset;
+        padding: 0px 11px;
+        background-image: none;
+      }
+
+    a { 
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+
+        &:active {  
+            color: $primary-orange;
+        }
+
+    }
+
+    .top-hero-heading {  
+        font-size: 24px;
+        margin-bottom: 17px;
+        color: #F6F6F6;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+            color: $grey-color;
+          }
+
+    }
+
+    .middle-hero-heading {  
+        white-space: pre-line;
+        font-size: 58px;
+        margin-bottom: 27px;
+
+        @media (max-width: 768px) {
+            font-size: 36px;
+            color: $soft-black-color;
+            white-space: normal;
+          }
+
+    }
+
+    .p-hero-heading {   
+        margin-bottom: 55px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #F6F6F6;
+
+        @media (max-width: 768px) {
+            color: $grey-color
+          }
+
+    }
+
+    .hero-button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+          }
+        
+        .hero-playstore-button {   
+            width: 235px; 
+            min-width: 165px;
+            height: 68px;
+            line-height: 68px;
+            font-size: 24px;
+            background-color: $primary-orange;
+            border: $primary-orange 1px solid;
+            border-radius: 30px;
+            margin: 0 calc(34px / 2);
+
+            @media (max-width: 768px) {
+                margin-bottom: 17px;
+              }
+
+        }
+
+        .hero-appstore-button { 
+            width: 235px; 
+            min-width: 165px;
+            height: 68px;
+            line-height: 68px;
+            font-size: 24px;
+            background-color: #f6f6f600;
+            border: #F6F6F6 1px solid;
+            border-radius: 30px;
+            margin: 0 calc(34px / 2);
+
+            @media (max-width: 768px) {
+                color: $primary-orange;
+                border: $primary-orange 1px solid;
+              }
+    
+        }
+
+    }
+
+}
+
+.hero-phone-container { 
+    position: relative;
+    margin: 0 auto;
+    max-width: 550px;
+    min-width: 320px;
+    height: 600px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    } 
+
+    #left-phone {   
+        position: absolute;
+        left: -50px;
+        bottom: 120px;
+        width: 299px;
+        z-index: 1;
+
+        @media (max-width: 768px) {
+            width: 55%;
+            max-width: 230px;
+            left: 0px;
+            top: -60px;
+          }
+
+    }
+
+    #right-phone {  
+        position: absolute;
+        right: 50px;
+        bottom: 0px;
+        top: 0;
+        width: 285px;
+        z-index: 0;
+
+        @media (max-width: 768px) {
+            width: 55%;
+            max-width: 220px;
+            right: 10px;
+          }
+
+    }
+
+}

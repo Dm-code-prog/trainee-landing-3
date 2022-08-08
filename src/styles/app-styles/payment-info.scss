@@ -74,6 +74,12 @@
     height: 205px;
     border-radius: 20px;
 
+    .card-one, .bank-one { 
+      display: flex;
+      align-items: center;
+    }
+
+
     .card-img {
       padding: 13px;
       width: 40px;
