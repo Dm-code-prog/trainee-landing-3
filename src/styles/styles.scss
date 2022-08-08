@@ -1,5 +1,7 @@
 @use "./common.scss";
 @use "./app-styles/starting-menu.scss";
+@use "./app-styles/dish-description.scss";
+@use "./app-styles/payment-info.scss";
 @use "./app-styles/home-screen.scss";
 @use "./app-styles/navigation-screen.scss";
 @use "./app-styles/search-screen.scss";
@@ -7,6 +9,7 @@
 @use "./app-styles/profile-details-screen.scss";
 @use "./landing-styles/header.scss";
 @use "./landing-styles/footer.scss";
+@use "./landing-styles/bottom-app-content.scss";
 @use "./app-layout.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;1,300;1,500;1,600;1,700;1,800&display=swap"); //sf pro rounded
