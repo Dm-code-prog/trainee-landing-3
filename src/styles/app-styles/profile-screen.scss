@@ -106,6 +106,7 @@
             margin-bottom: 30px;
             position: relative;
             transition: transform .3s ease-out;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
             cursor: pointer;
 
             &:hover {   
