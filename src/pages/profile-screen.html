@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <div class="app-outer-layout">
+      <div class="app-inner-layout profile-screen">
+       
+        <div class="app-profile-screen-header">
+            <a href="./home-screen.html"><img src="/src/assets/icons/back-icon.svg"></a>
+            <h3>My profile</h3>
+        </div>
+
+        <h3 class="app-profile-screen-information-header">Information</h3>
+
+        <div class="app-profile-screen-profile-item">
+          
+            <img src="/src/assets/images/app-profile-image.svg">
+            <div class="app-profile-screen-text">  
+              <a class="app-profile-edit-button" href="/src/pages/profile-details-screen.html"><img src="/src/assets/icons/app-edit-icon.svg"></a>
+              <h4>Marvis Ighedosa</h4>
+              <p>dosamarvis@gmail.com</p>
+              <p>No 15 uti street off ovie palace road effurun delta state</p>
+            </div>
+            
+        </div>
+
+        <h3 class="app-profile-screen-payment-header">Payment Method</h3>
+
+        <form class="app-profile-screen-payment-method-container">
+
+          <div class="app-profile-radio-item">
+            <input class="app-profile-radio-input" id="card" type="radio" name="payment" value="card">
+            <img draggable="false" src="/src/assets/icons/app-card-icon.svg" alt="">
+            <label class="app-profile-radio-label" for="card">Card</label>
+          </div>
+
+          <div class="app-profile-radio-item">
+            <input class="app-profile-radio-input" id="bank" type="radio" name="payment" value="bank">
+            <img draggable="false" src="/src/assets/icons/app-bank-icon.svg" alt="">
+            <label class="app-profile-radio-label" for="bank">Bank account</label>
+          </div>
+
+          <div class="app-profile-radio-item">
+            <input class="app-profile-radio-input" id="paypal" type="radio" name="payment" value="paypal">
+            <img draggable="false" src="/src/assets/icons/app-paypal-icon.svg" alt="">
+            <label class="app-profile-radio-label" for="paypal">Paypal</label>
+          </div>
+        
+        </form>
+
+        <button class="main-button profile-button">Update</button>
+
+      </div>
+    </div>
+  </body>
+</html>

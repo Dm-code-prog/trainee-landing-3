@@ -1,0 +1,120 @@
+@import './src/styles/variables.scss';
+
+.search-screen {    
+    background-color: $primary-grey;
+    min-width: 320px;
+
+    .app-search-screen-container {  
+        display: flex;
+        align-items: center;
+        padding-top: 70px;
+        margin: 0 50px;
+        margin-bottom: 35px;
+
+        a { 
+            margin-right: 40px;
+
+            @media (max-width: 319px) {
+                display: none;
+            }
+
+        }
+
+        img {   
+            height: 12px;
+        }
+
+        .app-search-screen-input {   
+            background-color: $primary-grey;
+            font-size: 17px;
+            font-weight: 600;
+            width: 100%;
+            outline: 0;
+            border: 0;
+        }
+
+    }
+
+    .app-search-screen-stuff-container {
+        background-color: #F9F9F9;
+        border-radius: 30px 30px 20px 20px;
+        height: 772px;
+        padding-top: 35px;
+
+        .app-search-screen-stuff-container-header {    
+            position: relative;
+            text-align: center;
+            margin-bottom: 80px;
+
+            &::after {  
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 80px;
+                bottom: -115px;
+                display: block;
+                background: linear-gradient(180deg, rgb(249, 249, 249) 15%, rgba(255, 255, 255, 0) 95%);
+                z-index: 5;
+            }
+
+        }
+
+        .app-search-screen-item-container {   
+            display: flex;
+            justify-content: space-evenly;
+            height: 88.5%;
+            overflow-y: scroll;
+            padding-top: 35px;
+            margin-top: -35px;
+
+            &::-webkit-scrollbar {  
+                display: none;
+            }
+
+            .app-search-screen-item-wrapper-right {  
+                margin-top: 55px;
+            }
+
+            .app-search-screen-item-wrapper-left, .app-search-screen-item-wrapper-right {
+                display: flex;
+                flex-direction: column;
+
+                .app-search-screen-item { 
+                    background-color: #FFFFFF;
+                    border-radius: 30px;
+                    text-align: center;
+                    margin: 0 25px;
+                    margin-bottom: 60px;
+                    box-shadow: 0px 30px 60px 0px #39393910;
+        
+                    img {   
+                        position: relative;
+                        width: 80%;
+                        top: -35px;
+                        border-radius: 100px;
+                        margin-bottom: -20px;
+                    }
+        
+                    h3 {    
+                        padding: 0 10px;
+                        padding-bottom: 15px;
+                        font-size: 22px;
+                        white-space: pre-line;
+                    }
+        
+                    p { 
+                        font-weight: 700;
+                        font-size: 17px;
+                        color: $primary-orange;
+                        padding-bottom: 39px;
+                    }
+        
+                }
+
+            }
+
+        }
+
+    }
+
+}
