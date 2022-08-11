@@ -1,6 +1,15 @@
 @use "./common.scss";
 @use "./app-styles/starting-menu.scss";
+@use "./app-styles/dish-description.scss";
+@use "./app-styles/payment-info.scss";
+@use "./app-styles/home-screen.scss";
+@use "./app-styles/navigation-screen.scss";
+@use "./app-styles/search-screen.scss";
+@use "./app-styles/profile-screen.scss";
+@use "./app-styles/profile-details-screen.scss";
+@use "./landing-styles/header.scss";
 @use "./landing-styles/footer.scss";
+@use "./landing-styles/bottom-app-content.scss";
 @use "./app-layout.scss";
 @use "./landing-styles/how-the-app-works-section.scss";
 @use "./app-styles/cart-delivery-section.scss";
@@ -21,3 +30,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+* a {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    &:-webkit-any-link {
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+}

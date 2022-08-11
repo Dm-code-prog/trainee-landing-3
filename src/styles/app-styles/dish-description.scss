@@ -1,0 +1,86 @@
+@import "variables.scss";
+@import "../components/button.scss";
+
+.dish-description {
+  background-color: $primary-grey-lighter;
+  height: 100vh;
+  width: 100%;
+
+  .dish-description-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dish-description-header {
+    padding: 66px 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .dish-description-foodimg {
+    margin: 0px 50px 0px 50px;
+  }
+
+  .dish-description-cicle {
+    display: flex;
+    gap: 12px;
+    .cicle-d {
+      width: 8px;
+      height: 8px;
+      background-color: #c4c4c4;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .cicle-r {
+      background-color: $primary-orange;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+
+  .dish-description-text {
+    h1 {
+      font-size: 28px;
+      line-height: 33px;
+      text-align: center;
+      margin-top: 45px;
+    }
+
+    h2 {
+      color: $primary-orange;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+      margin-top: 12px;
+    }
+  }
+
+  .dish-info {
+    padding-left: 53px;
+    padding-right: 64px;
+
+    h1 {
+      font-size: 17px;
+      line-height: 20px;
+      margin-top: 40px;
+    }
+
+    p {
+      padding-top: 7px;
+      font-size: 15px;
+      letter-spacing: 0.02em;
+      color: #c4c4c4;
+    }
+  }
+
+  .dish-button {
+    margin-top: 34px;
+    background-color: $primary-orange;
+    color: white;
+  }
+}
